@@ -21,6 +21,10 @@ const StoreSchema = new mongoose.Schema({
       type: Number,
     },
   ],
+  location: {
+    type: String,
+    required: true,
+  }
 });
 
 const Store = mongoose.model("Store", StoreSchema);
