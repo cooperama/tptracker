@@ -5,6 +5,8 @@ import NavBar from "./components/Navbar";
 import ProductList from "./pages/ProductList";
 import StoreList from "./pages/StoreList";
 import Home from "./pages/Home";
+import StoreShow from "./pages/StoreShow";
+import Cart from "./pages/Cart";
 import routes from "./config/routes";
 
 function App() {
