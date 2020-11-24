@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Link } from "react";
 import StoreModel from "../models/store";
 import StoreCard from "../components/StoreCard";
 
@@ -20,9 +20,13 @@ class StoreShow extends React.Component {
       <div>
         <div className="StoreCardContainer">
           <div className="store-logo">
-            <img src="" alt="" />
+            <img
+              src="https://allvectorlogo.com/img/2016/11/target-logo.png"
+              alt="target-logo"
+            />
           </div>
           <input type="text" placeholder="Search items at Target" />
+
           <div className="product-container">
             <div className="product-image">
               <img
@@ -36,25 +40,30 @@ class StoreShow extends React.Component {
                 <p>$5.99</p>
               </div>
               <div>
-                <i class="fas fa-plus-circle"></i>
+                <a href="/products/5248d90il21odh927519">
+                  <i className="fa fa-plus-circle"></i>
+                </a>
               </div>
             </div>
           </div>
-        </div>
-        <div className="product-container">
-          <div className="product-image">
-            <img
-              src="https://d2d8wwwkmhfcva.cloudfront.net/800x/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b3276b05-03d7-4ae7-9839-189f85a7a967.jpg"
-              alt="charmin"
-            />
-          </div>
-          <div className="product-info">
-            <div>
-              <p>Cottonelle Ultra ComfortCare Mega Roll Toilet Paper, 18pk</p>
-              <p>$17.99</p>
+
+          <div className="product-container">
+            <div className="product-image">
+              <img
+                src="https://d2d8wwwkmhfcva.cloudfront.net/800x/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b3276b05-03d7-4ae7-9839-189f85a7a967.jpg"
+                alt="cottonelle"
+              />
             </div>
-            <div>
-              <i class="fas fa-plus-circle"></i>
+            <div className="product-info">
+              <div>
+                <p>Cottonelle Ultra ComfortCare Mega Roll Toilet Paper, 18pk</p>
+                <p>$17.99</p>
+              </div>
+              <div>
+                <a href="/products/showProduct">
+                  <i className="fa fa-plus-circle"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>

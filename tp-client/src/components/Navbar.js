@@ -9,11 +9,12 @@ function NavBar(props) {
           <Link to="/">Home</Link>
           <Link to="/products">All Products</Link>
           <Link to="/stores">All Stores</Link>
-          {/* <Link to="/stores/:storeId">SSS</Link>
-          <Link to="/products/:productId">PPP</Link> */}
           <Link to="/cart">Cart</Link>
         </li>
       </ul>
+      <span>
+        <i className="fas fa-shopping-cart"></i>
+      </span>
     </nav>
   );
 }
