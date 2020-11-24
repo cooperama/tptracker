@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const ctrl = require("../controllers/stores");
+const ctrl = require("../controllers/storeCtrl");
 
 router.get("/", ctrl.stores.index);
 router.get("/:storeId", ctrl.stores.show);
