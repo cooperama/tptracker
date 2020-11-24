@@ -8,7 +8,7 @@ function StoreCard(props) {
         <img 
           className="storeCardImg"
           src={props.store.image}
-          alt={props.game.name}
+          alt={props.store.name}
         />
         <h2>{props.store.name}</h2>
         <h3>{props.store.products}</h3>
