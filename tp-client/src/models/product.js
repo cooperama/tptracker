@@ -18,6 +18,43 @@ class ProductModel {
         return { product: {}}
       })
   }
+
+  static create(newItem) {
+    return fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(newItem)
+    })
+    .then((res) => res.json())
+    .catch((err) => {
+      console.log("Error creating data", err);
+      return { product: {} }
+    })
+  }
+
+  static update(productId, updatedProduct) {
+    return fetch(`${url}/${productId}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(updatedProduct)
+    })
+    .then((res) => res.json())
+    .catch((err) => {
+      console.log("Error updating data", err);
+      return { product: {} }
+    });
+  }
+
+  static delete(productId) {
+    return fetch(`${url}/${productId}`, {
+      method: 'DELETE',
+    })
+    .then((res) => res.json())
+    .catch((err) => {
+      console.log("Error deleting data", err);
+      return { product: {} }
+    })
+  }
 }
 
 export default ProductModel;
