@@ -5,12 +5,19 @@ import Home from "../pages/Home";
 import ProductList from "../pages/ProductList";
 import StoreList from "../pages/StoreList";
 
-const routes = () => {
+// const routes = () => {
+//   <Switch>
+//     <Route exact path="/" component={Home} />
+//     <Route path="/products" component={ProductList} />
+//     <Route path="/stores" component={StoreList} />
+//   </Switch>;
+// };
+export default (
   <Switch>
     <Route exact path="/" component={Home} />
     <Route path="/products" component={ProductList} />
     <Route path="/stores" component={StoreList} />
-  </Switch>;
-};
+  </Switch>
+);
 
-export default routes;
+// export default routes;
