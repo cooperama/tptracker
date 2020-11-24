@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Link } from "react";
 import StoreModel from "../models/store";
 import StoreCard from "../components/StoreCard";
 
@@ -20,9 +20,13 @@ class StoreShow extends React.Component {
       <div>
         <div className="StoreCardContainer">
           <div className="store-logo">
-            <img src="" alt="" />
+            <img
+              src="https://allvectorlogo.com/img/2016/11/target-logo.png"
+              alt="target-logo"
+            />
           </div>
           <input type="text" placeholder="Search items at Target" />
+
           <div className="product-container">
             <div className="product-image">
               <img
@@ -36,10 +40,13 @@ class StoreShow extends React.Component {
                 <p>$5.99</p>
               </div>
               <div>
-                <i class="fa fa-plus-circle"></i>
+                <a href="/products/5248d90il21odh927519">
+                  <i className="fa fa-plus-circle"></i>
+                </a>
               </div>
             </div>
           </div>
+
           <div className="product-container">
             <div className="product-image">
               <img
@@ -53,7 +60,9 @@ class StoreShow extends React.Component {
                 <p>$17.99</p>
               </div>
               <div>
-                <i class="fa fa-plus-circle"></i>
+                <a href="/products/showProduct">
+                  <i className="fa fa-plus-circle"></i>
+                </a>
               </div>
             </div>
           </div>
