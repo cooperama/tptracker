@@ -11,11 +11,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      {/* <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/products" component={ProductList} />
-        <Route exact path="/stores" component={StoreList} />
-      </Switch> */}
+
       {routes}
     </div>
   );
