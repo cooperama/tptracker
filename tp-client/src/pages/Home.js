@@ -33,7 +33,7 @@ class Home extends React.Component {
             </div>
           </form>
           <Link to="/products">
-            <i class="fas fa-angle-right"></i>
+            <i className="fas fa-angle-right"></i>
           </Link>
         </div>
         <div className="map-image">

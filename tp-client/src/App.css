@@ -112,3 +112,118 @@ nav {
 .store-image-div img {
   width: 100%;
 }
+
+/* *************************** */
+/* Checkout Page */
+.checkout-nav {
+  background-color: #40ccff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+label {
+  font-size: 1.3rem;
+  padding-bottom: 20px;
+}
+
+.payment-form {
+  height: 70vh;
+  padding: 70px 20px 0 20px;
+}
+.payment-form a {
+  color: #40ccff;
+  font-size: 0.8rem;
+}
+.payment-method,
+.delivery-address {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.payment-top,
+.delivery-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  align-items: baseline;
+}
+.payment-bottom,
+.delivery-bottom {
+  display: flex;
+  justify-content: flex-start;
+}
+.payment-bottom p,
+.delivery-bottom > div {
+  padding-right: 10px;
+}
+.payment-bottom p:nth-of-type(2),
+.address p {
+  color: gray;
+}
+
+.delivery-options > p {
+  padding-bottom: 10px;
+}
+
+.delivery-options div {
+  padding: 10px;
+}
+
+.pick-up-btn-selected {
+  border: 1px solid #40ccff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.checked {
+  color: #40ccff;
+  padding-right: 5px;
+}
+.fa-walking,
+.fa-car {
+  /* padding-right: 15px; */
+  padding-left: 10px;
+}
+
+.fa-credit-card,
+.fa-home {
+  width: 40px;
+  text-align: center;
+}
+
+.delivery-btn {
+  display: flex;
+}
+.icon {
+  display: inline-block;
+  width: 40px;
+}
+.icon + span {
+  color: rgb(65, 65, 65);
+}
+
+.confirm-order {
+  /* background: red; */
+  padding: 20px;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  padding-bottom: 20px;
+}
+.confirm-order-btn {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: goldenrod;
+  border: none;
+  font-size: 1.1rem;
+}

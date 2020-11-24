@@ -12,7 +12,7 @@ function NavBar(props) {
           <Link to="/cart">Cart</Link>
         </li>
       </ul> */}
-      <i class="fas fa-chevron-left"></i>
+      <i className="fas fa-chevron-left"></i>
       <h2 className="brand-name">Essentials.</h2>
       <i className="fas fa-shopping-cart"></i>
     </nav>
