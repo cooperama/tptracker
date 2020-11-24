@@ -21,6 +21,7 @@ function App() {
         <Route exact path="/cart" component={Cart} />
 
       </Switch>*/}
+      { routes }
     </div>
   );
 }

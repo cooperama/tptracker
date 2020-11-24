@@ -1,5 +1,6 @@
 // from Coding With Basir YouTube tutorial
 import React, { Component } from 'react';
+import Chips from '../images/Chips.png';
 
 function Header(props) {
   return (
@@ -19,6 +20,7 @@ function Items(props) {
     <tr><th>Name</th>
     <th>Count</th>
     <th>Price</th>
+    <th><img src={Chips} alt="chips"/></th>
     <th>Total</th></tr>
   </thead>
   <tbody>
