@@ -42,10 +42,14 @@ class ProductList extends React.Component {
           <div className="productThumbnail">
             <Link to={`/stores`} className="productThumbnailLink">
               <div className="product-image-div">
-                <img className="productThumbnailImg" src={chips} alt="chips" />
+                <img
+                  className="productThumbnailImg"
+                  src={tp}
+                  alt="toilet paper"
+                />
               </div>
               <div className="productName">
-                <p>Chips</p>
+                <p>Toilet Paper</p>
               </div>
             </Link>
           </div>
@@ -90,14 +94,10 @@ class ProductList extends React.Component {
           <div className="productThumbnail">
             <Link to={`/stores`} className="productThumbnailLink">
               <div className="product-image-div">
-                <img
-                  className="productThumbnailImg"
-                  src={tp}
-                  alt="toilet paper"
-                />
+                <img className="productThumbnailImg" src={chips} alt="chips" />
               </div>
               <div className="productName">
-                <p>Toilet Paper</p>
+                <p>Chips</p>
               </div>
             </Link>
           </div>

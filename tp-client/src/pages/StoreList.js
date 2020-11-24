@@ -30,7 +30,7 @@ class StoreList extends React.Component {
   }
   render() {
     return (
-      <div className="products-container">
+      <div className="store-products-container">
         {/* {this.renderStores()} */}
         <h1 className="select-store">Select a Store</h1>
         <Link to={`/stores/79081320749t69183r`} className="StoreCardLink">

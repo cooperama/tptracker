@@ -9,6 +9,7 @@ import MyCart from "../pages/MyCart";
 import Checkout from "../pages/Checkout";
 import ProductShow from "../pages/ProductShow";
 import StoreShow from "../pages/StoreShow";
+import Confirmed from "../pages/Confirmed";
 
 // const routes = () => {
 //   <Switch>
@@ -27,6 +28,7 @@ export default (
     <Route path="/checkout" component={Checkout} />
     <Route path="/products/:productId" component={ProductShow} />
     <Route path="/stores/:storeId" component={StoreShow} />
+    <Route path="/confirmed" component={Confirmed} />
   </Switch>
 );
 

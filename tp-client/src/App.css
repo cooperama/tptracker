@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 body {
@@ -41,11 +42,15 @@ a {
   left: 133px;
   top: 150px;
 }
+.welcome h1 {
+  font-weight: lighter;
+}
 .brand-name-home {
   display: block;
   padding-left: 10px;
   font-size: 2.8rem;
   padding-top: 5px;
+  font-weight: bold;
 }
 
 .map-image {
@@ -62,8 +67,12 @@ a {
 }
 .zipcode-form-input label {
   display: block;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding-bottom: 5px;
+}
+
+input::placeholder {
+  color: rgb(199, 199, 199);
 }
 .zipcode-form-input input {
   width: 90%;
@@ -71,11 +80,12 @@ a {
   box-shadow: none;
 }
 .fa-angle-right {
-  background: goldenrod;
+  background: #fdb241;
   height: 100%;
   width: 30px;
   text-align: center;
   padding-top: 6px;
+  box-shadow: 0 0 1px black;
 }
 .zipcode-input-line {
   border: none;
@@ -92,7 +102,7 @@ input:active {
 /*     Navbar     */
 nav {
   background-color: rgb(89, 196, 242);
-  height: 50px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -141,7 +151,15 @@ nav {
 
 /* Product List/thumbnail */
 .productThumbnail {
+  border: 2px solid #ade9ff;
+  /* border-radius: 20px 20px 0px 0px; */
+  border-radius: 20px;
   display: flex;
+  width: 45%;
+  height: 200px;
+  /* height: 174px; */
+  margin: 5px;
+  /* display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 45%;
@@ -150,24 +168,36 @@ nav {
   top: 151px;
   background: #ffffff;
   border: 1px solid #40ccff;
-  border-radius: 20px 20px 0px 0px;
   margin: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; */
 }
 .product-image-div {
   width: 100%;
+  /* width: 100%; */
+  height: 200px;
 }
 .productThumbnailImg {
-  border-radius: 20px 20px 0px 0px;
+  /* border-radius: 20px 20px 0px 0px;
+  width: 100%; */
   width: 100%;
+  margin-top: 20px;
 }
 .productName {
+  background: #ade9ff;
+  border: 2px solid #ade9ff;
   height: 48px;
-  left: 198px;
+  width: 103%;
+  position: relative;
+  top: -20px;
+  left: -2.5px;
+  border-radius: 0 0 20px 20px;
+  /* height: 48px;
+  left: 195px;
   top: 582px;
+  width: 102%;
   background: #ade9ff;
   border: 1px solid #40ccff;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0px 0px 20px 20px; */
 }
 
 .productName p {
@@ -188,6 +218,9 @@ nav {
 /* Store List Page */
 .select-store {
   margin-top: 50px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 .StoreCard {
@@ -195,11 +228,47 @@ nav {
   flex-direction: row;
   width: 100%;
   justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+
+.StoreCard:nth-of-type(1),
+.StoreCard:nth-of-type(2) {
+  border-bottom: 1px solid rgba(203, 203, 203, 0.427);
+}
+.distance p {
+  font-size: 0.9rem;
+}
+.distance {
+  justify-self: flex-end;
+  text-align: right;
+}
+.fa-star {
+  color: #fdb241;
 }
 .store-image-div {
   width: 75px;
 }
 .store-info-div {
+  width: 200px;
+}
+.store-info-div p {
+  font-size: 0.9rem;
+  padding-bottom: 2px;
+}
+
+.store-name {
+  padding-bottom: 10px;
+}
+.store-name h2 {
+  padding-bottom: 5px;
+}
+.store-name p {
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+.more-store-info p {
+  padding-bottom: 5px;
+  font-size: 0.8rem;
 }
 
 
@@ -339,20 +408,20 @@ nav {
   padding: 5px 10px;
 }
 .fa-plus {
-  color: goldenrod;
+  color: #fdb241;
 }
 .fa-minus {
   color: gray;
 }
 .cart-plus-one {
-  background: goldenrod;
+  background: #fdb241;
   position: absolute;
   height: 20px;
   width: 20px;
   border-radius: 50%;
   text-align: center;
-  top: 5px;
-  right: 5px;
+  top: 12px;
+  right: 7px;
 }
 
 
@@ -460,13 +529,14 @@ label {
   display: flex;
   justify-content: space-between;
   font-size: 1.3rem;
+  font-weight: bold;
   padding-bottom: 20px;
 }
 .confirm-order-btn {
   width: 100%;
   padding: 20px;
   border-radius: 20px;
-  background-color: goldenrod;
+  background-color: #fdb241;
   border: none;
   font-size: 1.1rem;
 }
