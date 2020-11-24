@@ -8,13 +8,18 @@ class ProductList extends React.Component {
   };
 
   componentDidMount() {
+    // API call
     ProductModel.all().then((data) => {
       console.log("data: ", data);
       this.setState({ products: data.products });
     });
   }
   render() {
-    return <div>Products List</div>;
+    return (
+      <div className="poducts-container">
+        <h1>Products List</h1>
+      </div>
+    );
   }
 }
 

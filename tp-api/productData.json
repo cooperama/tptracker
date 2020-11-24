@@ -2,23 +2,53 @@
   "products": [
     {
       "item": "Toilet Paper",
-      "price": "$10"
+      "price": 10,
+      "image": "https://www.unsplash.it/200"
     },
     {
       "item": "Hand Sanitizer",
-      "price": "$4"
+      "price": 4,
+      "image": "https://www.unsplash.it/200"
     },
     {
       "item": "Face Masks",
-      "price": "$7"
+      "price": 7,
+      "image": "https://www.unsplash.it/200"
     },
     {
       "item": "Clorox Wipes",
-      "price": "$5"
+      "price": 5,
+      "image": "https://www.unsplash.it/200"
     },
     {
       "item": "Echinacea Tea",
-      "price": "$4"
+      "price": 4,
+      "image": "https://www.unsplash.it/200"
+    },
+    {
+      "item": "Eggs",
+      "price": 3,
+      "image": "https://www.unsplash.it/200"
+    },
+    {
+      "item": "Milk",
+      "price": 4,
+      "image": "https://www.unsplash.it/200"
+    },
+    {
+      "item": "Hot Cheetos",
+      "price": 3,
+      "image": "https://www.unsplash.it/200"
+    },
+    {
+      "item": "Water",
+      "price": 5,
+      "image": "https://www.unsplash.it/200"
+    },
+    {
+      "item": "Hydrogen Peroxide",
+      "price": 4,
+      "image": "https://www.unsplash.it/200"
     }
   ]
 }

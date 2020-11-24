@@ -24,9 +24,13 @@ const StoreSchema = new mongoose.Schema({
   location: {
     type: String,
     required: true,
-  }
+  },
+  image: {
+    type: String,
+    required: true,
+  },
 });
 
 const Store = mongoose.model("Store", StoreSchema);
 
-module.exports = Article;
+module.exports = Store;
