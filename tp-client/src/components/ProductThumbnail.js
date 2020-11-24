@@ -13,7 +13,9 @@ function ProductThumbnail(props) {
             alt={props.name}
           />
         </div>
-        <h2>{props.name}</h2>
+        <div className="productName">
+          <h2>{props.name}</h2>
+        </div>
       </Link>
     </div>
   );

@@ -30,7 +30,7 @@ class ProductList extends React.Component {
   render() {
     return (
       <div className="poducts-container">
-        <h1>Products List</h1>
+        <h1>Select an item</h1>
         {this.renderProducts()}
       </div>
     );
