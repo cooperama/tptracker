@@ -4,7 +4,7 @@ import Chips from '../images/Chips.png';
 
 function Header(props) {
   return (
-    <h1>Shopping Cart</h1>
+    <h1>My Cart</h1>
   )
 }
 
