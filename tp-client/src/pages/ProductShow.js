@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Link } from "react";
 import ProductModel from "../models/product";
 import ProductCard from "../components/ProductCard";
 
@@ -8,6 +8,7 @@ class ProductShow extends React.Component {
     count: 0,
   };
   addToCartRef = React.createRef();
+  navRef = React.createRef();
 
   componentDidMount() {
     const productId = this.props.match.params.id;
@@ -36,11 +37,24 @@ class ProductShow extends React.Component {
   };
   addToCartHandler = (e) => {
     e.target.value = "Added to Cart";
-    this.addToCartRef.current.classList.remove("display-none");
+    this.navRef.current.classList.remove("display-none");
+    // this.addToCartRef.current.classList.remove("display-none");
   };
   render() {
     return (
       <div>
+        <nav ref={this.navRef} className="checkout-nav display-none">
+          <i className="fas fa-chevron-left"></i>
+          <h2 className="brand-name">Essentials.</h2>
+          <div>
+            <a href="/mycart">
+              <i className="fas fa-shopping-cart"></i>
+            </a>
+
+            <div className="cart-plus-one">1</div>
+          </div>
+        </nav>
+
         <div ref={this.addToCartRef} className="addedToCart display-none">
           1
         </div>
