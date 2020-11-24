@@ -13,15 +13,8 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      {/* <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/products" component={ProductList} />
-        <Route exact path="/store" component={StoreShow} />
-        <Route exact path="/stores" component={StoreList} />
-        <Route exact path="/cart" component={Cart} />
 
-      </Switch>*/}
-      { routes }
+      {routes}
     </div>
   );
 }
