@@ -15,29 +15,34 @@ class Home extends React.Component {
   };
   render() {
     return (
-      <div>
-        <div className="main-content">
-          <h1>
-            Welcome to <span className="brand-name">Essentials.</span>
-          </h1>
-          <form action="">
-            <div className="form-input">
-              <label htmlFor="zipcode">Enter your Zipcode</label>
-              <input
-                type="text"
-                name="zipcode"
-                id="zipcode"
-                onChange={this.searchHandler}
-                placeholder="Zipcode"
-              />
-            </div>
-          </form>
-          <Link to="/products">
-            <i class="fas fa-angle-right"></i>
-          </Link>
-        </div>
+      <div className="homepage">
+        <div className="nav-cover"></div>
         <div className="map-image">
           <img src={backgroundImage} alt="background image" />
+        </div>
+        <div className="main-content">
+          <div className="welcome">
+            <h1>
+              Welcome to <span className="brand-name-home">Essentials.</span>
+            </h1>
+            {/* <form className="zipcode-form-input" action=""> */}
+            <div className="zipcode-form-input">
+              <label htmlFor="zipcode">Enter your Zipcode</label>
+              <div className="zipcode-input-line">
+                <input
+                  type="text"
+                  name="zipcode"
+                  id="zipcode"
+                  onChange={this.searchHandler}
+                  placeholder="Zipcode"
+                />
+                <Link to="/products">
+                  <i className="fas fa-angle-right"></i>
+                </Link>
+              </div>
+            </div>
+            {/* </form> */}
+          </div>
         </div>
       </div>
     );
