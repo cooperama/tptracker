@@ -5,6 +5,7 @@ import Home from "../pages/Home";
 import ProductList from "../pages/ProductList";
 import StoreList from "../pages/StoreList";
 import Cart from '../pages/Cart';
+import Checkout from '../pages/Checkout';
 
 // const routes = () => {
 //   <Switch>
@@ -19,6 +20,7 @@ export default (
     <Route path="/products" component={ProductList} />
     <Route path="/stores" component={StoreList} />
     <Route path="/cart" component={Cart} />
+    <Route path="/checkout" component={Checkout} />
   </Switch>
 );
 
