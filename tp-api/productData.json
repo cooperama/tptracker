@@ -1,7 +1,24 @@
 {
-  "stores": [
+  "products": [
     {
-      "name": 
+      "item": "Toilet Paper",
+      "price": "$10"
+    },
+    {
+      "item": "Hand Sanitizer",
+      "price": "$4"
+    },
+    {
+      "item": "Clorox Wipes",
+      "price": "$7"
+    },
+    {
+      "item": "Face Masks",
+      "price": "$5"
+    },
+    {
+      "item": "Echinacea Tea",
+      "price": "$4"
     }
   ]
 }
