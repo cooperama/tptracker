@@ -7,3 +7,15 @@
   width: 100%;
   /* width: 50px; */
 }
+
+
+/* Product List/thumbnail */
+.productThumbnail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.productThumbnailImg {
+  background-color: #89ddff;
+}
