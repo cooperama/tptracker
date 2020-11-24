@@ -14,8 +14,27 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  width: 165px;
+  height: 174px;
+  left: 198px;
+  top: 151px;
+
+  background: #FFFFFF;
+  border: 1px solid #40CCFF;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .productThumbnailImg {
-  background-color: #89ddff;
+  background-color: #ADE9FF;
+  border-radius: 30px;
+}
+
+.productName {
+  height: 48px;
+  left: 198px;
+  top: 582px;
+
+  background: #ADE9FF;
+  border: 1px solid #40CCFF;
+  border-radius: 0px 0px 20px 20px;
 }
