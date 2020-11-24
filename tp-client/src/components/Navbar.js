@@ -8,6 +8,7 @@ function NavBar(props) {
         <li className="navLi">
           <Link to="/">Home</Link>
           <Link to="/products">Products</Link>
+          <Link to="/stores">Stores</Link>
         </li>
       </ul>
     </nav>

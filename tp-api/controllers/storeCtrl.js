@@ -3,7 +3,7 @@ const db = require("../models");
 const index = (req, res) => {
   db.Store.find({})
     .then((foundStore) => {
-      res.json({ stores: foundStores });
+      res.json({ stores: foundStore });
     })
     .catch((err) => {
       console.log("Error in Stores.index: ", err);

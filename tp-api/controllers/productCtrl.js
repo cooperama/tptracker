@@ -3,7 +3,7 @@ const db = require("../models");
 const index = (req, res) => {
   db.Product.find({})
     .then((foundProduct) => {
-      res.json({ products: foundProducts });
+      res.json({ products: foundProduct });
     })
     .catch((err) => {
       console.log("Error in products.index: ", err);
