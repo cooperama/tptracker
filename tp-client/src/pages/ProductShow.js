@@ -79,7 +79,7 @@ class ProductShow extends React.Component {
               <div className="count"></div>
               <input type="text" value={this.state.count} />
               <span onClick={this.addToCount}>
-                <i className="fas fa-plus 3x"></i>
+                <i className="fas fa-plus"></i>
               </span>
             </div>
             <div className="price">
@@ -99,7 +99,7 @@ class ProductShow extends React.Component {
           </div>
           <div className="product-reviews">
             <h4>Reviews</h4>
-            <span>
+            <span class="stars">
               <i className="fas fa-star"></i>
               <i className="fas fa-star"></i>
               <i className="fas fa-star"></i>
