@@ -7,8 +7,11 @@ function NavBar(props) {
       <ul>
         <li className="navLi">
           <Link to="/">Home</Link>
-          <Link to="/products">Products</Link>
-          <Link to="/stores">Stores</Link>
+          <Link to="/products">All Products</Link>
+          <Link to="/stores">All Stores</Link>
+          {/* <Link to="/stores/:storeId">SSS</Link>
+          <Link to="/products/:productId">PPP</Link> */}
+          <Link to="/cart">Cart</Link>
         </li>
       </ul>
     </nav>
