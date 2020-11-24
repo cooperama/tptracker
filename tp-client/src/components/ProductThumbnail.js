@@ -5,7 +5,8 @@ function ProductThumbnail(props) {
   console.log("product thumbnail");
   return (
     <div className="productThumbnail">
-      <Link to={`/products/${props.id}`} className="productThumbnailLink">
+      <Link to={`/stores`} className="productThumbnailLink">
+        {/* <Link to={`/products/${props.id}`} className="productThumbnailLink"> */}
         <div className="product-image">
           <img
             className="productThumbnailImg"
