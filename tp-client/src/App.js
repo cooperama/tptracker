@@ -1,9 +1,13 @@
+import React from 'react';
 import "./App.css";
+import NavBar from './components/Navbar';
+import routes from './config/routes';
 
 function App() {
   return (
     <div className="App">
-      <h1>landing page</h1>
+      <NavBar />
+      { routes }
     </div>
   )
 }
