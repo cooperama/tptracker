@@ -11,3 +11,21 @@
 .display-none {
   display: none;
 }
+
+/* Product List/thumbnail */
+.productThumbnail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 165px;
+  height: 174px;
+  left: 198px;
+  top: 151px;
+  background: #ffffff;
+  border: 1px solid #40ccff;
+  border-radius: 20px 20px 0px 0px;
+}
+.productThumbnailImg {
+  background-color: #ade9ff;
+  border-radius: 30px;
+}
