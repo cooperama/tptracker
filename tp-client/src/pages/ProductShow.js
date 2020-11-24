@@ -62,12 +62,13 @@ class ProductShow extends React.Component {
           {/* <ProductCard product={this.state.product} /> */}
           <div className="product-show-image-container">
             <img
+              className="product-show-image"
               src="https://www.riteaid.com/shop/media/catalog/product/0/3/037000613244_6.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=406&width=406&canvas=406:406"
               alt="charmin"
             />
           </div>
           <div className="product-show-title">
-            <p>Charmin Ultra Soft Toilet Paper</p>
+            <h2>Charmin Ultra Soft Toilet Paper</h2>
             <p>Mega Rolls - 4 ct</p>
           </div>
           <div className="numbers-container">
@@ -82,7 +83,7 @@ class ProductShow extends React.Component {
               </span>
             </div>
             <div className="price">
-              <p>$5.99</p>
+              <h3>$5.99</h3>
             </div>
           </div>
           <div className="product-detail">
@@ -98,7 +99,7 @@ class ProductShow extends React.Component {
           </div>
           <div className="product-reviews">
             <h4>Reviews</h4>
-            <span>
+            <span class="stars">
               <i className="fas fa-star"></i>
               <i className="fas fa-star"></i>
               <i className="fas fa-star"></i>
@@ -112,7 +113,7 @@ class ProductShow extends React.Component {
           <input
             type="button"
             onClick={this.addToCartHandler}
-            className="add-to-cart"
+            className="add-to-cart-button"
             value="Add to Cart"
           />
         </div>

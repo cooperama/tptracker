@@ -25,17 +25,17 @@ class StoreShow extends React.Component {
               alt="target-logo"
             />
           </div>
-          <input type="text" placeholder="Search items at Target" />
+          <input className="target-search" type="text" placeholder="Search items at Target" />
 
           <div className="product-container">
             <div className="tp-image">
-              <img className="target-logo"
+              <img
                 src="https://www.riteaid.com/shop/media/catalog/product/0/3/037000613244_6.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=406&width=406&canvas=406:406"
                 alt="charmin"
               />
             </div>
             <div className="product-info">
-              <div>
+              <div className="tp-text">
                 <p>Charmin Ultra Soft Toilet Paper Mega Rolls<small> - 4 ct</small></p>
                 <p>$5.99</p>
               </div>
