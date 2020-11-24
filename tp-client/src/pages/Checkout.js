@@ -69,7 +69,9 @@ export default function Checkout() {
           <p>Total:</p>
           <p>$5.99</p>
         </div>
-        <button className="confirm-order-btn">Confirm Order</button>
+        <a href="/confirmed">
+          <button className="confirm-order-btn">Confirm Order</button>
+        </a>
       </div>
     </div>
   );
