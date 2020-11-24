@@ -1,0 +1,34 @@
+{
+  "stores": [
+    {
+      "name": "Von's",
+      "location": "LA",
+      "image": "https://dynl.mktgcdn.com/p/gE_4WpVTOXIKIY43VukobV-_lsQZ6zChVQLJqDT66Hg/600x244.jpg"
+    },
+    {
+      "name": "Trader Joe's",
+      "location": "KTown",
+      "image": "https://www.traderjoes.com/Brandify/images/024-la-mesa-storefront.jpg"
+
+    },
+    {
+      "name": "Costco",
+      "location": "KTown",
+      "image": "https://www.robcon.com/wp-content/uploads/2017/10/Costco_LA-5-1800x900.jpg"
+
+    },
+    {
+      "name": "Safeway",
+      "location": "KTown",
+      "image": "https://dynl.mktgcdn.com/p/yDfzgH9PwmHdGs_IOrfxRmcghb6UjM8fZVNK_Z82bAo/600x419.png"
+
+    },
+    {
+      "name": "CVS",
+      "location": "KTown",
+      "image": "https://whatnowlosangeles.com/wp-content/uploads/sites/3/2020/03/CVS-Pharmacy.png"
+
+    }
+  ]
+
+}
