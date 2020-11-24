@@ -1,19 +1,21 @@
-// import React from 'react';
-// import ProductModel from '../models/product';
-// import { Link } from 'react-router-dom';
+import React from "react";
+import ProductModel from "../models/product";
+import { Link } from "react-router-dom";
 
-// class ProductList extends React.Component {
-//   state= {
-//     products: []
-//   }
+class ProductList extends React.Component {
+  state = {
+    products: [],
+  };
 
-//   componentDidMount() {
-//     this.fetchData()
-//   }
+  componentDidMount() {
+    ProductModel.all().then((data) => {
+      console.log("data: ", data);
+      this.setState({ products: data.products });
+    });
+  }
+  render() {
+    return <div>Products List</div>;
+  }
+}
 
-//   fetchData = () {
-
-//   }
-// }
-
-// export default ProductList;
+export default ProductList;

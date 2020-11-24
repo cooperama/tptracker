@@ -1,20 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import ProductModel from "../models/product";
 
 class Home extends React.Component {
   state = {
     search: "",
   };
-  searchHandler = (e) => {
-    console.log(e.target.value);
-    this.setState({ search: e.target.value });
-    // check whether input is number or words
-    console.log(/\d/.test(this.state.search));
-  };
-  itemSearchHandler = (e) => {};
   submitClickHandler = (e) => {
     e.preventDefault();
-    if (/\d/.test(this.state.search)) {
-    }
+    ProductModel.all().then((data) => {
+      // this.props.history.push("/products");
+    });
   };
   render() {
     return (
@@ -29,25 +25,8 @@ class Home extends React.Component {
               onChange={this.searchHandler}
             />
           </div>
-          <p>or</p>
-          <div className="form-input">
-            <select name="item" id="item">
-              <option value="">choose an item</option>
-              <option value="Toilet Paper">Toilet Paper</option>
-              <option value="Hand Sanitizer">Hand Sanitizer</option>
-              <option value="Soap">Soap</option>
-              <option value="Flour">Flour</option>
-              <option value="Clorox Wipes">Clorox Wipes</option>
-              <option value="Face Masks">Face Masks</option>
-              <option value="Echinacea Tea">Echinacea Tea</option>
-            </select>
-          </div>
-          <input
-            type="submit"
-            value="Continue"
-            onClick={this.submitClickHandler}
-          />
         </form>
+        <Link to="/products">Continue</Link>
       </div>
     );
   }
