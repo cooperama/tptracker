@@ -35,7 +35,7 @@ export default function Checkout() {
               <i class="fas fa-home"></i>
             </div>
             <div className="address">
-              <p>Louie Robertson</p>
+              <p>Karen Robertson</p>
               <p>543 Norman Ave Los Angeles, CA</p>
               <p>98039</p>
             </div>

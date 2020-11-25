@@ -97,7 +97,7 @@ class ProductList extends React.Component {
                 <img className="productThumbnailImg" src={chips} alt="chips" />
               </div>
               <div className="productName">
-                <p>Chips</p>
+                <p>Flamin' Hot Cheetos</p>
               </div>
             </Link>
           </div>
