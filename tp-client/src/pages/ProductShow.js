@@ -6,6 +6,7 @@ class ProductShow extends React.Component {
   state = {
     product: {},
     count: 0,
+    price: 0.0,
   };
   addToCartRef = React.createRef();
   navRef = React.createRef();
@@ -21,8 +22,10 @@ class ProductShow extends React.Component {
     this.setState((prevState) => {
       if (prevState.count > 0) {
         const newCount = prevState.count - 1;
+        const newPrice = 5.99 * newCount;
         return {
           count: newCount,
+          price: newPrice,
         };
       }
     });
@@ -30,8 +33,10 @@ class ProductShow extends React.Component {
   addToCount = () => {
     this.setState((prevState) => {
       const newCount = prevState.count + 1;
+      const newPrice = 5.99 * newCount;
       return {
         count: newCount,
+        price: newPrice,
       };
     });
   };
@@ -63,7 +68,7 @@ class ProductShow extends React.Component {
           <div className="product-show-image-container">
             <img
               className="product-show-image"
-              src="https://www.riteaid.com/shop/media/catalog/product/0/3/037000613244_6.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=406&width=406&canvas=406:406"
+              src="https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_98ca7243-103f-4435-813c-fbb291cfe147.jpg"
               alt="charmin"
             />
           </div>
@@ -83,7 +88,7 @@ class ProductShow extends React.Component {
               </span>
             </div>
             <div className="price">
-              <h3>$5.99</h3>
+              <h3>${this.state.price}</h3>
             </div>
           </div>
           <div className="product-detail">

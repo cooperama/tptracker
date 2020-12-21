@@ -38,7 +38,7 @@ class MyCart extends React.Component {
           <div>
             <div className="cart-item-image">
               <img
-                src="https://www.riteaid.com/shop/media/catalog/product/0/3/037000613244_6.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=406&width=406&canvas=406:406"
+                src="https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_98ca7243-103f-4435-813c-fbb291cfe147.jpg"
                 alt="charmin"
               />
             </div>

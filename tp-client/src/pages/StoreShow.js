@@ -20,23 +20,32 @@ class StoreShow extends React.Component {
       <div>
         <div className="StoreCardContainer">
           <div className="store-logo">
-            <img className="target-logo"
+            <img
+              className="target-logo"
               src="https://allvectorlogo.com/img/2016/11/target-logo.png"
               alt="target-logo"
             />
           </div>
-          <input className="target-search" type="text" placeholder="Search items at Target" />
+          <input
+            className="target-search"
+            type="text"
+            placeholder="Search items at Target"
+          />
 
           <div className="product-container">
             <div className="tp-image">
               <img
-                src="https://www.riteaid.com/shop/media/catalog/product/0/3/037000613244_6.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=406&width=406&canvas=406:406"
+                src="https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_98ca7243-103f-4435-813c-fbb291cfe147.jpg"
+                // src="https://www.riteaid.com/shop/media/catalog/product/0/3/037000613244_6.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=406&width=406&canvas=406:406"
                 alt="charmin"
               />
             </div>
             <div className="product-info">
               <div className="tp-text">
-                <p>Charmin Ultra Soft Toilet Paper Mega Rolls<small> - 4 ct</small></p>
+                <p>
+                  Charmin Ultra Soft Toilet Paper Mega Rolls
+                  <small> - 4 ct</small>
+                </p>
                 <p>$5.99</p>
               </div>
               <div>
@@ -56,7 +65,10 @@ class StoreShow extends React.Component {
             </div>
             <div className="product-info">
               <div>
-                <p>Cottonelle Ultra ComfortCare Mega Roll Toilet Paper <small>- 18pk</small></p>
+                <p>
+                  Cottonelle Ultra ComfortCare Mega Roll Toilet Paper{" "}
+                  <small>- 18pk</small>
+                </p>
                 <p>$17.99</p>
               </div>
               <div>
